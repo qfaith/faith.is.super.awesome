@@ -91,14 +91,13 @@
 				light.position.set( 1, 1, 1 ).normalize();
 				scene.add( light );
 
-				//////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+				// ******** START CODING ON THE NEXT LINE ********
 				var shape = new THREE.SphereGeometry(0.15);
 				var cover = new THREE.MeshNormalMaterial();
 				var ball = new THREE.Mesh(shape, cover);
-				room.add(ball);
-
-				//////////////////////////////////////////////////////////////////////////////////////////////////////////
+				scene.add(ball);
+				
+				//////////////////////////////////////////////////
 
 				raycaster = new THREE.Raycaster();
 
