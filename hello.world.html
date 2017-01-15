@@ -96,7 +96,7 @@
 				var cover = new THREE.MeshNormalMaterial();
 				var ball = new THREE.Mesh(shape, cover);
 				scene.add(ball);
-				
+				ball.position.set(0, -0.15, 0)
 				//////////////////////////////////////////////////
 
 				raycaster = new THREE.Raycaster();
