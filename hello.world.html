@@ -92,13 +92,28 @@
 				scene.add( light );
 
 				// ******** START CODING ON THE NEXT LINE ********
-				var shape = new THREE.SphereGeometry(0.15);
-				var cover = new THREE.MeshNormalMaterial();
-				var ball = new THREE.Mesh(shape, cover);
-				scene.add(ball);
-				ball.position.set(0, -0.67, 0)
-				//////////////////////////////////////////////////
+				const shapeBallie = new THREE.SphereGeometry(0.15);
+				const coverBallie = new THREE.MeshNormalMaterial();
+				const ballie = new THREE.Mesh(shapeBallie, coverBallie);
+				scene.add(ballie);
+				ballie.position.set(0, -0.69, 0);
 
+
+				const shapeBabySitter  = new THREE.SphereGeometry(0.30);
+				const coverBabySitter = new THREE.MeshNormalMaterial();
+				const babySitter = new THREE.Mesh(shapeBabySitter, coverBabySitter);
+				scene.add(babySitter);
+				babySitter.position.set(-1, -0.69, 0);
+
+
+
+				const shapeKubie  = new THREE.BoxGeometry(0.1, 0.1, 0.1);
+				const coverKubie = new THREE.MeshNormalMaterial();
+				const kubie = new THREE.Mesh(shapeKubie, coverKubie);
+				scene.add(kubie);
+				kubie.position.set(0, -0.69, 0.2);
+				// ****** STOP CODING ON THE PREVIOUS LINE *******
+												
 				raycaster = new THREE.Raycaster();
 
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
